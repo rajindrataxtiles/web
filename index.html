@@ -1,99 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Raj Indra Textiles</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Raj Indra Textiles</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,sans-serif}
+body{background:#f4f6f9;color:#333}
 
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Poppins', Arial, sans-serif;
-            background: #f4f6f8;
-            color: #333;
-        }
+/* HEADER */
+header{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:#fff;padding:20px 0 60px}
+.container{width:90%;max-width:1100px;margin:auto}
+nav{display:flex;justify-content:space-between;align-items:center}
+nav h1{font-size:24px}
+nav ul{list-style:none;display:flex;gap:20px}
+nav ul li a{color:#fff;text-decoration:none;font-weight:500}
+.hero{text-align:center;margin-top:60px}
+.hero h2{font-size:36px;margin-bottom:10px}
+.hero p{font-size:18px;opacity:.9}
 
-        header {
-            background: linear-gradient(135deg, #7a1f1f, #b83232);
-            color: white;
-            padding: 50px 20px;
-            text-align: center;
-        }
+/* SECTIONS */
+section{padding:60px 0}
+section h2{text-align:center;font-size:30px;margin-bottom:40px;color:#203a43}
 
-        nav a {
-            color: white;
-            margin: 0 12px;
-            text-decoration: none;
-            font-weight: 600;
-        }
+/* PRODUCTS */
+.products,.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px}
+.card{
+background:#fff;border-radius:10px;overflow:hidden;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+transition:.3s}
+.card:hover{transform:translateY(-5px)}
+.card img{width:100%;height:200px;object-fit:cover}
+.card .info{text-align:center;padding:15px}
+.card h3{margin-bottom:8px}
+.card p{font-size:14px;color:#555}
 
-        section {
-            padding: 60px 20px;
-            max-width: 1100px;
-            margin: auto;
-            text-align: center;
-        }
+/* CONTACT */
+.contact-box{
+background:#fff;max-width:600px;margin:auto;
+padding:30px;border-radius:10px;
+box-shadow:0 10px 20px rgba(0,0,0,.1)}
+.contact-box input,.contact-box textarea{
+width:100%;padding:12px;margin-bottom:15px;
+border:1px solid #ccc;border-radius:5px}
+.contact-box button{
+width:100%;padding:12px;
+background:#203a43;color:#fff;
+border:none;font-size:16px;border-radius:5px}
 
-        h2 {
-            color: #7a1f1f;
-        }
+/* WHATSAPP */
+.whatsapp{
+position:fixed;bottom:20px;right:20px;
+background:#25D366;color:#fff;
+padding:15px 18px;border-radius:50%;
+font-size:22px;text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+z-index:999}
 
-        .btn {
-            display: inline-block;
-            padding: 14px 30px;
-            background: #7a1f1f;
-            color: white;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: 600;
-            margin-top: 20px;
-        }
-
-        footer {
-            background: #1f1f1f;
-            color: #ccc;
-            text-align: center;
-            padding: 25px;
-        }
-    </style>
+/* FOOTER */
+footer{background:#203a43;color:#fff;text-align:center;padding:15px}
+</style>
 </head>
 
 <body>
 
-<header>
-    <h1>Raj Indra Textiles</h1>
-    <p>Quality Fabric & Custom Dress Manufacturing</p>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Products</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<!-- HEADER -->
+<header id="home">
+<div class="container">
+<nav>
+<h1>Raj Indra Textiles</h1>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<div class="hero">
+<h2>Premium Fabric & Ready Garments</h2>
+<p>Single Order • Bulk Order • Custom Manufacturing</p>
+</div>
+</div>
 </header>
 
-<section>
-    <h2>Welcome</h2>
-    <p>
-        We provide premium fabric, ladies dresses, kurtis and custom stitching.
-        Single piece and bulk orders available.
-    </p>
+<!-- PRODUCTS -->
+<section id="products">
+<div class="container">
+<h2>Our Products</h2>
+<div class="products">
 
-    <a href="gallery.html" class="btn">View All Products</a>
+<div class="card">
+<img src="https://via.placeholder.com/400x300">
+<div class="info">
+<h3>Designer Kurti</h3>
+<p>Modern design with premium fabric.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/400x300">
+<div class="info">
+<h3>Fabric Material</h3>
+<p>High quality fabric for bulk orders.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/400x300">
+<div class="info">
+<h3>Ready Made Dress</h3>
+<p>Perfect stitching and finishing.</p>
+</div>
+</div>
+
+</div>
+</div>
 </section>
 
+<!-- GALLERY -->
+<section id="gallery">
+<div class="container">
+<h2>Gallery</h2>
+<div class="gallery">
+
+<div class="card"><img src="https://via.placeholder.com/400x300"></div>
+<div class="card"><img src="https://via.placeholder.com/400x300"></div>
+<div class="card"><img src="https://via.placeholder.com/400x300"></div>
+<div class="card"><img src="https://via.placeholder.com/400x300"></div>
+<div class="card"><img src="https://via.placeholder.com/400x300"></div>
+<div class="card"><img src="https://via.placeholder.com/400x300"></div>
+
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
 <section id="contact">
-    <h2>Contact Us</h2>
-    <p><strong>Phone:</strong> +91 9462767611</p>
-    <p><strong>Instagram:</strong> @raj_indra_textiles</p>
+<div class="container">
+<h2>Contact Us</h2>
 
-    <a class="btn" href="https://wa.me/919462767611" target="_blank">
-        Chat on WhatsApp
-    </a>
+<form class="contact-box" action="https://formsubmit.co/your-email@example.com" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<input type="text" name="phone" placeholder="Phone Number">
+<textarea name="message" rows="4" placeholder="Your Inquiry" required></textarea>
+<button type="submit">Send Inquiry</button>
+</form>
+</div>
 </section>
+
+<!-- WHATSAPP BUTTON -->
+<a class="whatsapp" href="https://wa.me/919462767611" target="_blank">💬</a>
 
 <footer>
-    <p>© 2026 Raj Indra Textiles</p>
+<p>© 2026 Raj Indra Textiles. All Rights Reserved.</p>
 </footer>
 
 </body>
