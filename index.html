@@ -100,6 +100,20 @@
                 font-size: 24px;
             }
         }
+        .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
     </style>
 </head>
 
@@ -135,6 +149,15 @@
 </section>
 
 <section id="contact">
+    <section id="gallery">
+    <h2>Product Gallery</h2>
+
+    <div class="gallery">
+        <img src="images/dress1.jpg" alt="Ladies Dress">
+        <img src="images/fabric1.jpg" alt="Fabric Collection">
+        <img src="images/dress2.jpg" alt="Designer Kurti">
+    </div>
+</section>
     <h2>Contact Us</h2>
     <p><strong>Business Name:</strong> Raj Indra Textiles</p>
     <p><strong>Phone:</strong> +91 9462767611</p>
